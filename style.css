@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: #5a5a5a;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#promptInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#loadingIndicator {
+    margin: 20px 0;
+    font-style: italic;
+    color: #666;
+}
+
+#imageContainer {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 512px; /* Adjust as needed */
+    min-height: 200px; /* Placeholder height */
+    border: 1px solid #ddd;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure image fits */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#generatedImage {
+    max-width: 100%;
+    max-height: 512px; /* Match container or adjust */
+    display: block; /* Remove extra space below image */
+    object-fit: contain; /* Scale image while preserving aspect ratio */
+}
+
+
+#downloadBtn {
+    margin-top: 20px;
+    background-color: #28a745;
+}
+
+#downloadBtn:hover {
+    background-color: #218838;
+}
+
